@@ -1,10 +1,13 @@
 const express = require('express')
 const resultSights = require('./resultSights')
 
-const app = express()
+
 const port = 8222
 
+
+const app = express()
 app.use(express.json());
+
 app.use(resultSights);
 
 
