@@ -14,22 +14,9 @@ export const CreateSightPage = ({ setSightToEdit }) => {
     const [sights, setSights] = useState([]);
     const history = useHistory();
 
-    // const onDelete = async _id => {
-    //     const response = await fetch(`/sights/${_id}`, { method: 'DELETE' });
-    //     if (response.status === 204) {
-    //         setSights(sights.filter(e => e._id !== _id));
-    //     } else {
-    //         console.error(`Failed to delete sight with _id = ${_id}, status code = ${response.status}`);
-    //     }
-    // };
-
-    // const onEdit = sight => {
-    //     setSightToEdit(sight);
-    //     history.push("/edit-sight");
-    // };
 
     const loadSights = async () => {
-        const response = await fetch('/sights');
+        const response = await fetch('/sight-ideas');
         const data = await response.json();
         setSights(data);
     };
