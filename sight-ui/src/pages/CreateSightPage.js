@@ -27,22 +27,22 @@ export const CreateSightPage = ({ setSightToEdit }) => {
 
 
 
-    const addSight = async () => {
-        const newSight = { name, location, weather, crimeRate };
-        const response = await fetch('/sights', {
-            method: 'POST',
-            body: JSON.stringify(newSight),
-            headers: {
-                'Content-Type': 'application/json',
-            },
-        });
-        if (response.status === 201) {
-            alert("Successfully added the sightseeing location");
-        } else {
-            alert(`Failed to add sight, status code = ${response.status}`);
-        }
-        history.push("/");
-    };
+    // const addSight = async () => {
+    //     const newSight = { name, location, weather, crimeRate };
+    //     const response = await fetch('/sights', {
+    //         method: 'POST',
+    //         body: JSON.stringify(newSight),
+    //         headers: {
+    //             'Content-Type': 'application/json',
+    //         },
+    //     });
+    //     if (response.status === 201) {
+    //         alert("Successfully added the sightseeing location");
+    //     } else {
+    //         alert(`Failed to add sight, status code = ${response.status}`);
+    //     }
+    //     history.push("/");
+    // };
 
     return (
         <div>

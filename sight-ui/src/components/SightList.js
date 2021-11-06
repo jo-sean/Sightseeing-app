@@ -1,7 +1,7 @@
 import React from 'react';
 import Sight from './Sight';
 
-function SightList({ sights, onDelete, onEdit }) {
+function SightList({ sights }) {
     return (
         <table id="sights_table">
             <thead>
@@ -10,14 +10,12 @@ function SightList({ sights, onDelete, onEdit }) {
                     <th>Location</th>
                     <th>Weather</th>
                     <th>Crime Rate</th>
-                    {/* <th>Edit</th>
-                    <th>Delete</th> */}
+
                 </tr>
             </thead>
             <tbody>
                 {sights.map((sight, i) => <Sight sight={sight}
-                    onDelete={onDelete}
-                    onEdit={onEdit}
+
                     key={i} />)}
             </tbody>
         </table>
