@@ -17,16 +17,13 @@ class ShowSightPage extends React.Component {
         this.searchSights = this.searchSights.bind(this);
     }
 
-
     handleChange = event => {
         event.preventDefault();
         console.log(event.target.value)
         this.setState({ value: event.target.value });
     };
 
-
     searchSights = async (event) => {
-        // console.log("search sights");
         event.preventDefault();
 
         const response = await fetch('http://localhost:8222/sight-ideas', {
@@ -43,7 +40,7 @@ class ShowSightPage extends React.Component {
     };
 
     searchWeather = async (event) => {
-        // console.log("search sights");
+
         event.preventDefault();
         const weather = await fetch('http://localhost:3030/current-weather/zip-code', {
             method: 'POST',
@@ -57,10 +54,6 @@ class ShowSightPage extends React.Component {
 
         weather.json().then(weather_json => { this.setState({ weather: weather_json }) }).catch(error => { alert(error) })
 
-        // const weather_text = `It is currently ${this.state.weather.weather} and the temperature is ${this.state.weather.temperature}F`
-
-        // this.setState({ weather: weather_text })
-
         console.log(this.state.weather)
     };
 
@@ -68,9 +61,7 @@ class ShowSightPage extends React.Component {
     render() {
         return (
             <>
-
                 <img src={scene} alt="sunset" class='responsive'></img>
-
 
                 <h2>Sightseeing Results in that area</h2>
 
@@ -78,9 +69,7 @@ class ShowSightPage extends React.Component {
                 <br></br>
 
                 <section className='Weather'>
-
                     Weather: {this.state.weather.weather}
-
                 </section>
 
                 <br></br>
@@ -99,7 +88,6 @@ class ShowSightPage extends React.Component {
                 <br></br>
 
                 <form>
-
                     <label for="zip">Enter 5-digit zip code from Oregon</label>
                     <input
                         type="number"
@@ -114,18 +102,15 @@ class ShowSightPage extends React.Component {
                         placeholder='97XXX'
                         className='Button'
                         required>
-
                     </input>
                     <button className='Button' onClick={this.searchSights} onMouseUp={this.searchWeather} id='Search'>Search</button>
                 </form>
-                <br></br>
-                <br></br>
 
+                <br></br>
+                <br></br>
             </>
-
         );
     }
-
 }
 
 export default ShowSightPage;

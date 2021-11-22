@@ -7,10 +7,8 @@ function SightList({ sights }) {
             <thead>
                 <tr>
                     <th>Name</th>
-                    <th>Location</th>
-                    <th>Weather</th>
-                    <th>Crime Rate</th>
-
+                    <th>Latitude</th>
+                    <th>Longitude</th>
                 </tr>
             </thead>
             <tbody>

@@ -7,7 +7,7 @@ body {
 }
 
 .App-header {
-  min-height: 50vh;
+  /* min-height: 5vh; */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -19,6 +19,9 @@ body {
 h1{
   color: #10b6e9;
   font-size: 50px;
+  position: absolute;
+  left:40%;
+
 }
 
 .App-header h2 {
@@ -26,7 +29,7 @@ h1{
 }
 
 .Anchor {
-  color: white;
+  color: #10b6e9;
   text-decoration:none;
 }
 
@@ -35,11 +38,6 @@ h1{
   text-decoration: underline;
 }
 
-.Button {
-  background-color: #adb5bd;
-  left: 20px;
-  position:relative;
-}
 
 td, th {
   border: 1px solid rgb(255, 255, 255);
@@ -74,17 +72,15 @@ th {
 .Intro {
   color:#93E9BE;
   font-size: 70%;
-}
-
-.NewSearch {
-  width: 90px;
-  height: 40px;
-  left: 20px;
-  position:relative;
+  background: ghostwhite; 
+  font-size: 20px; 
+  padding: 10px; 
+  border: 1px solid lightgray; 
+  margin: 10px;
 }
 
 .homeAnchor {
-  color: #93E9BE;
+  color: whitesmoke;
   text-decoration:none;
 }
 
@@ -92,4 +88,62 @@ th {
 .homeAnchor:hover {
   color: tomato;
   text-decoration: underline;
+}
+
+.GoHome {
+  font-size: medium;
+  color: tomato;
+  position: relative;
+  /* left: 20px; */
+  background: ghostwhite; 
+  font-size: 20px; 
+  padding: 15px; 
+  border: 1px solid lightgray; 
+  margin: 10px;
+
+}
+
+.NewSearch {
+  width: 50px;
+  height: 20px;
+  left: 10px;
+  background-color: #93E9BE;
+  position:relative;
+  border-radius: 8px;
+  border-color: #93E9BE;
+}
+
+#Search {
+  color: #10b6e9;
+}
+
+
+.Button {
+  /* background-color: #adb5bd; */
+  left: 20px;
+  position:relative;
+  width: 90px;
+  height: 50px;
+  left: 30px;
+  font-size: medium;
+  border-radius: 8px;
+}
+
+#zip {
+  left:20px;
+}
+
+.Warning {
+  color: tomato;
+}
+
+.Weather {
+  color:ghostwhite;
+  font-size: 70%;
+  background: #93E9BE ; 
+  font-size: 20px; 
+  padding: 10px; 
+  border: 1px solid lightgray; 
+  margin: 10px;
+  border-radius: 8px;
 }
