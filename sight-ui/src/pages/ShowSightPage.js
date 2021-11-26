@@ -51,15 +51,15 @@ class ShowSightPage extends React.Component {
                 <br></br>
                 <br></br>
 
-                <section className='weather'>
-                    Weather: {this.state.weather.weather};
+                <section className='goHome'>
+                    Want to see the directions of how to use it again?
+                    <button className='newSearch'><Link to="/" className='homeAnchor'>Home</Link></button>
                 </section>
 
                 <br></br>
 
-                <section className='goHome'>
-                    Want to see the directions of how to use it again?
-                    <button className='newSearch'><Link to="/" className='homeAnchor'>Home</Link></button>
+                <section className='weather'>
+                    Weather: {this.state.weather.weather}
                 </section>
 
                 <br></br>
@@ -69,8 +69,8 @@ class ShowSightPage extends React.Component {
 
                 <br></br>
 
-                <form>
-                    <label for="zip">Enter 5-digit zip code from Oregon</label>
+                <form >
+                    <label className='zip' for="zip">Enter 5-digit zip code from Oregon</label>
                     <input
                         type="number"
                         name="value"

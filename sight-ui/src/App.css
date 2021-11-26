@@ -19,13 +19,19 @@ body {
 h1{
   color: #10b6e9;
   font-size: 50px;
-  position: absolute;
-  left:40%;
+  /* position: absolute; */
+  display: flex;
+  flex-direction: column;
+  /* left:40%; */
 
 }
 
-.appHeader h2 {
-  font-size: calc(9px + 2vmin);
+h2 {
+  font-size: calc(10px + 2vmin);
+  color: #fdd85d;
+  /* position: absolute; */
+  display: flex;
+  flex-direction: column;
 }
 
 .anchor {
@@ -38,10 +44,18 @@ h1{
   text-decoration: underline;
 }
 
+table{
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%; 
+  border-radius: 8px;
+} 
 
 td, th {
   border: 1px solid rgb(255, 255, 255);
   padding: 8px;
+  font-size: calc(11px + 2vmin);
+  width:auto;
 }
 
 tr:nth-child(even){
@@ -49,7 +63,10 @@ tr:nth-child(even){
   color: #93E9BE;
 }
 
-tr:hover {background-color: #ddd;}
+tr:hover {
+  background-color: #ddd;
+}
+
 tr{
   color: white;
 }
@@ -57,9 +74,10 @@ tr{
 th {
   padding-top: 12px;
   padding-bottom: 12px;
-  text-align: left;
+  text-align: center;
   background-color: #93E9BE;
   color: white;
+  align-items: center;
 }
 
 .responsive {
@@ -98,6 +116,7 @@ th {
   padding: 15px; 
   border: 1px solid lightgray; 
   margin: 10px;
+  border-radius: 8px;
 
 }
 
@@ -109,6 +128,8 @@ th {
   position:relative;
   border-radius: 8px;
   border-color: #93E9BE;
+  text-align: center;
+  
 }
 
 #search {
@@ -118,15 +139,18 @@ th {
 .button {
   left: 20px;
   position:relative;
-  width: 90px;
-  height: 50px;
+  width: 100px;
+  height: 55px;
   left: 30px;
-  font-size: medium;
   border-radius: 8px;
+  font-size: calc(8px + 2vmin);
+  font: bold;
+  text-align: center;
 }
 
-#zip {
-  left:20px;
+.zip {
+  font-size: calc(10px + 2vmin);
+  color: #fdd85d;
 }
 
 .warning {
@@ -137,9 +161,16 @@ th {
   color:ghostwhite;
   font-size: 70%;
   background: #93E9BE ; 
-  font-size: 20px; 
+  font-size: calc(8px + 2vmin);
   padding: 10px; 
   border: 1px solid lightgray; 
   margin: 10px;
   border-radius: 8px;
+  font: bold;
+}
+
+#zip {
+  left:20px;
+  background: #93E9BE;
+  color:ghostwhite;
 }

@@ -14,7 +14,7 @@ class HomePage extends React.Component {
                     search bar and click the "Search" button'. If you want to do a new zip code, just change it and click "Search"
                     again. <span className='warning'> If nothing happens, that means that the postal code entered is not valid. </span> Happy searching!  </p>
 
-                <button className='button'><Link to="/show-sights" className=' anchor'>Get Started</Link></button>
+                <button className='button'><Link to="/show-sights" className='anchor'>Get Started</Link></button>
 
                 <br></br>
                 <br></br>
