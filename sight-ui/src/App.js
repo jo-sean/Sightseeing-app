@@ -9,10 +9,10 @@ function App() {
   const [setSightToEdit] = useState();
 
   return (
-    <div className="App">
-      <h1 className="Title">See Oregon</h1>
+    <div className="app">
+      <h1 className="title">See Oregon</h1>
       <Router>
-        <div className="App-header">
+        <div className="appheader">
           <Route path="/" exact>
             <HomePage />
           </Route>
