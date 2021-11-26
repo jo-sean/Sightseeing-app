@@ -3,7 +3,7 @@ import Sight from './Sight';
 
 function SightList({ sights }) {
     return (
-        <table id="sights_table">
+        <table id="sightsTable">
             <thead>
                 <tr>
                     <th>Name</th>
@@ -12,9 +12,7 @@ function SightList({ sights }) {
                 </tr>
             </thead>
             <tbody>
-                {sights.map((sight, i) => <Sight sight={sight}
-
-                    key={i} />)}
+                {sights.map((sight, i) => <Sight sight={sight} key={i} />)}
             </tbody>
         </table>
     );
